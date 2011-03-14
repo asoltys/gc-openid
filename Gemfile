@@ -1,9 +1,10 @@
 source :rubygems
 
-gem "rails", "~> 3.0.3"
+gem "rails", "3.0.5"
 gem "mysql"
 gem 'ruby-openid', :require => 'openid'
 gem 'ruby-yadis', :require => 'yadis'
+gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   gem 'mocha'
