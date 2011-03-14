@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddAxPropertiesToPersona < ActiveRecord::Migration
   def self.up
     # Personal

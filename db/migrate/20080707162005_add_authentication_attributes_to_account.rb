@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddAuthenticationAttributesToAccount < ActiveRecord::Migration
   def self.up
     add_column :accounts, :last_authenticated_at, :datetime

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PasswordsController < ApplicationController
 
   before_filter :find_account_by_reset_code, :only => [:edit, :update]

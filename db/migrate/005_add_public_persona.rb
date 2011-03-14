@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddPublicPersona < ActiveRecord::Migration
   def self.up
     add_column :accounts, :public_persona_id, :integer

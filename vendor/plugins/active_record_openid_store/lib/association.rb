@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'openid/association'
 
 class Association < ActiveRecord::Base

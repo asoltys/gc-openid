@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Masquerade::Application.routes.draw do
 
   resource :account do

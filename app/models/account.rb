@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Account < ActiveRecord::Base
   
   has_many :personas, :dependent => :destroy, :order => 'id ASC'

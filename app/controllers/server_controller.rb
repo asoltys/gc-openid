@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ServerController < ApplicationController
   
   # CSRF-protection must be skipped, because incoming

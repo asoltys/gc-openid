@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ReleasePolicy < ActiveRecord::Base
   belongs_to :site
   

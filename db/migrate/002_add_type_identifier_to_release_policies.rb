@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddTypeIdentifierToReleasePolicies < ActiveRecord::Migration
   def self.up
     add_column :release_policies, :type_identifier, :string

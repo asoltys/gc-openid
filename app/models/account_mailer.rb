@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AccountMailer < ActionMailer::Base
   
   default :from => Masquerade::Application::Config['mailer']['from']

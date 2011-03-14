@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ServerHelper
   
   def sreg_request_for_field(field_name)

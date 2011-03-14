@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # This module is mainly a wrapper for the OpenID::Server functionality provided
 # by the ruby-openid gem. Included in your server controller it gives you some
 # helpful methods to access and answer OpenID requests.

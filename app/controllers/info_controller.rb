@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class InfoController < ApplicationController
 
   # The yadis discovery header tells incoming OpenID

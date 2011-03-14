@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Configure generators values. Many other options are available, be sure to check the documentation.
 Rails.application.config.generators do |g|
   g.orm             :active_record

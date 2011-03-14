@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddYubikeyMandatoryToAccount < ActiveRecord::Migration
   def self.up
     add_column :accounts, :yubikey_mandatory, :boolean, :null => false, :default => false

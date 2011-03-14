@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Hash
   def except(*keys)
     self.reject { |k,v| keys.include?(k.to_sym) }

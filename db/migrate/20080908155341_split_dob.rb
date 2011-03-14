@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SplitDob < ActiveRecord::Migration
   def self.up
     add_column :personas, :dob_day, :integer, :limit => 2
