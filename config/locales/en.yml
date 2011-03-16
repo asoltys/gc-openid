@@ -5,6 +5,9 @@ en:
   app_title: GC OpenID
   app_description: Government of Canada Open Identity Provider
   app_keywords: government, canada, openid, open, identity
+
+  contact_us: Contact Us
+  search_label: Search
   
   # account controller
   thanks_for_signing_up_activation_link: Thank you for signing up! We sent you an email containing an activation link.

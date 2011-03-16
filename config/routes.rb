@@ -1,6 +1,5 @@
 # -*- encoding : utf-8 -*-
 Masquerade::Application.routes.draw do
-
   resource :account do
     get :activate
     get :password
@@ -18,7 +17,9 @@ Masquerade::Application.routes.draw do
   resource :session
   resource :password
   
+  get "/contact" => "info#contact"
   get "/help" => "info#help", :as => :help
+  get "/search" => "info#search"
   get "/safe-login" => "info#safe_login", :as => :safe_login
   
   get "/forgot_password" => "passwords#new", :as => :forgot_password
@@ -43,53 +44,4 @@ Masquerade::Application.routes.draw do
   get "/:account" => "accounts#show", :as => :identity
 
   root :to => "info#index"
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => "welcome#index"
-
 end
