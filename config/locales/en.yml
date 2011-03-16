@@ -103,16 +103,16 @@ en:
     and should contain no links.<br />If there are any links, please report to us, who sent you here."
 
   # nav
-  my_identity: identity
-  my_profile: profile
-  my_personas: personas
-  my_trusted_sites: trusted sites
-  logout: logout
-  current_verification_request: current verification request
-  login_link: login
-  signup_link: signup
-  help: help
-  get_help: get help
+  my_identity: Identity
+  my_profile: Profile
+  my_personas: Personas
+  my_trusted_sites: Trusted Sites
+  logout: Logout
+  current_verification_request: Current Verification Request
+  login_link: Login
+  signup_link: Signup
+  help: Help
+  get_help: Get Help
   openid_consumer_testsuite_title: OpenID Consumer Testsuite
   relying_party_title: Relying Party
   
