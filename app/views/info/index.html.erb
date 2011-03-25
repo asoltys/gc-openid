@@ -1,2 +1,19 @@
-<h2><%=t :get_your_openid %></h2>
-<%= simple_format t(:openid_intro, :signup_link => link_to(t(:signup_for_an_openid), new_account_path)) %>
+<h1>Welcome</h1>
+
+<p>
+GC OpenID is a proof of concept project to bring <a href="http://openid.net/" title="OpenID Foundation website">OpenID</a> to the Government of Canada.
+</p>
+
+<p>
+The first step to using OpenID is to enable applications to accept OpenID identities in lieu of or as an alternative to application-specific login credentials.  Many <a href="http://openid.net/add-openid/add-getting-started" title="List of OpenID libraries">third-party libraries</a> exist to accomplish this.  However, for OpenID to truly gain traction within the federal public service, we'll likely need to allow the various departments to run their own identity servers so that they can interface with existing authentication solutions like LDAP which are only accessible behind departmental firewalls.
+</p>
+
+<p>
+The goal of this project is to provide a drop-in identity server that departments can host to provide their employees with OpenID endpoint URLs.  To accomplish this, we are using an open source Open ID provider called <a href="http://github.com/dbloete/masquerade" title="Masquerade at Github">Masquerade</a>. 
+</p> 
+
+<h2>Getting Started</h2>
+
+<p>
+To get started, <a href="/account/new" title="Sign Up Page">sign up</a> for an OpenID at this website.  You will be provided with a unique URL based on your username, such as <strong><%= request.url %>yourlogin</strong>, which you can then use to authenticate with any application that supports OpenID authentication.  The <a href="http://tbs-sct.ircan.gc.ca" title="Intellectual Resources Canada"><abbr name="Intellectual Resources Canada">IRCan</abbr> website</a> is one example.
+</p>
