@@ -80,6 +80,10 @@ class ApplicationController < ActionController::Base
     locale ||= request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first if request.env['HTTP_ACCEPT_LANGUAGE']
     I18n.locale = (locale && I18n.available_locales.include?(locale.to_sym)) ? locale : I18n.default_locale
   end 
+
+  def default_url_options(options={})
+    { :locale => I18n.locale }
+  end
   
   private
   
