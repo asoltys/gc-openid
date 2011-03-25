@@ -132,6 +132,7 @@
 	<section>
     <% if flash[:notice] %><div class="notice"><%=simple_format h(flash[:notice]) %></div><% end %>
     <% if flash[:alert] %><div class="error"><%=simple_format h(flash[:alert]) %></div><% end %>
+    <%= render :partial => 'layouts/notice' %>
     <%= yield %>
 	</section>
 	</div></div>
